@@ -1,0 +1,46 @@
+
+<html>
+<head>
+<h2 align = "center"><u> QUIZ</u> </h2>
+
+<script type="text/javascript">
+var i=0;
+function exam()
+{
+if(document.q1.n1[3].checked)
+i=i+1;
+if(document.q1.n2[1].checked)
+i=i+1;
+alert("your score is"+i+"/2");
+}
+
+</script>
+</head>
+
+<body bgcolor = "pink">
+<form name="q1">
+<h3>1. How many colours are there in rainbow?</h3>
+<input type="radio" name="n1" value="6">
+<label for="choice-6">6</label><br>
+<input type="radio"  name="n1" value="8">
+<label for="choice-8">8</label><br>
+<input type="radio"  name="n1" value="9">
+<label for="choice-9">9</label><br>
+<input type="radio"  name="n1" value="7">
+<label for="choice-7">7</label><br>
+
+<h3>2.Colour of sky is?</h3>
+<input type="radio" name="n2" value="Black">
+<label for="choice-Black">Black</label><br>
+<input type="radio" name="n2" value="Blue">
+<label for="choice-Blue">Blue</label><br>
+<input type="radio"  name="n2" value="Yellow">
+<label for="choice-Yellow">Yellow</label><br>
+<input type="radio" name="n2" value="Red">
+<label for="choice-Red">Red</label><br>
+<p>
+ <input type="submit" value="Submit" onclick="exam(this)">
+</p>
+</form>
+</body>
+</html>
